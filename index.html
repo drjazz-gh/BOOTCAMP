@@ -3,25 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerMentor - Empowering Women in Tech and Business</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/regular.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
 </head>
 <body>
-    <!-- Navigation (Preserved from collaborator's work) -->
-    <nav class="navbar">
-        <div class="logo">HerMentor</div>
-        <ul class="nav-link">
-            <li><a href="Features">Features</a></li>
-            <li><a href="How it works">How it works</a></li>
-            <li><a href="Sucess Stories">Sucess Stories</a></li>
-            <li><a href="pricing">Pricing</a></li>
-        </ul>
+    <nav class="navbar"> 
+        <div class="logo">
+            <img src="images/sheconnect.jpg" alt="Logo Image">
+            <h2>She<span>Connect</span></h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="">Home</a></li> 
+            <li><a href="">Mentors</a></li>
+            <li><a href="">Mentees</a></li>
+                
+            <li class="dropdown"> 
+                <a href="" class="drop-btn">Discover <i class="fa-solid fa-caret-down"></i></a>
+
+                <ul class="dropdown-content">
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Progress</a></li>
+                    <li><a href="">Join</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>  
+            
         <div class="nav-buttons">
-            <button class="sign-in">Sign In</button>
-            <button class="get-started">Get Started</button>
+            <a href="" class="btn btn-sign-in">Sign In</a>
+            <a href="" class="btn btn-get-started">Get Started</a>
+        </div>
+
+        <div class="bars">
+            <i class="fa-solid fa-bars" id="menuBar"></i>
         </div>
     </nav>
-
+ 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
@@ -36,6 +62,10 @@
 
                 <h1 class="hero-title">Connecting Students with Mentors for Growth, Confidence and Purpose</h1>
 
+                <div class="dynamic-quote-container">
+                    <p class="dynamic-quote active">“Behind every successful person is a mentor who believed in them.”</p>
+                </div>
+
                 <p class="hero-description">Join our network to find mentors, share your goals and take charge of your career journey.</p>
 
                 <div class="hero-buttons">
@@ -45,7 +75,12 @@
                             <path d="M4.16669 10H15.8334M15.8334 10L10 4.16669M15.8334 10L10 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <button class="btn-secondary btn-large">Join as Mentee </button>
+                    <button class="btn-secondary btn-large">
+                        Join as Mentee 
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16669 10H15.8334M15.8334 10L10 4.16669M15.8334 10L10 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </div>
 
                 <!-- Metrics -->
@@ -54,10 +89,12 @@
                         <div class="metric-number">10,000+</div>
                         <div class="metric-label">Active Members</div>
                     </div>
+
                     <div class="metric-card">
                         <div class="metric-number">2,500+</div>
                         <div class="metric-label">Expert Mentors</div>
                     </div>
+
                     <div class="metric-card">
                         <div class="metric-number">50+</div>
                         <div class="metric-label">Industries</div>
@@ -67,8 +104,7 @@
 
             <!-- Right Image -->
             <div class="hero-image">
-                <img src="assets/HerMentor.png" alt="Women mentoring in office">
-
+                <img src="images/hero-image.jpg" alt="Women mentoring in office">
             </div>
         </div>
     </section>
